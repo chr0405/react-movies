@@ -1,13 +1,50 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+body{
+    background-color: rgb(47, 23, 99);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.Movies{
+    display: inline;
+    width: 140px;
+    height: 300px;
 }
+
+.title_and_vote_average *{
+    position: relative;
+    display: inline-block;
+    color: white;
+    font-size: 12px;
+    margin: 0;
+    top: 10px;
+}
+
+h6{
+    display: inline;
+    width: 110px;
+    margin: 0;
+    text-align: center;
+}
+
+p{
+    width: 30px;
+    text-align: center;
+}
+
+.Movies-container{
+    position: relative;
+    background-color: rgb(77, 48, 117);
+    display: inline-block;
+    margin: 20px 20px;
+
+    width: 140px;
+    height: 300px;
+
+    border-radius: 2%;
+    box-shadow: 2px 2px rgb(38, 38, 38);
+}
+
+img{
+    display: inline;
+    width: 140px;
+    height: 230px;
+}
+
