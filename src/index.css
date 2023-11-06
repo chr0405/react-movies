@@ -2,49 +2,70 @@ body{
     background-color: rgb(47, 23, 99);
 }
 
-.Movies{
+/* .Movies{
     display: inline;
     width: 140px;
     height: 300px;
-}
+} */
 
-.title_and_vote_average *{
+/* .title_and_vote_average *, .moreInformation *{
     position: relative;
     display: inline-block;
     color: white;
     font-size: 12px;
     margin: 0;
     top: 10px;
-}
+} */
 
-h6{
-    display: inline;
-    width: 110px;
-    margin: 0;
-    text-align: center;
-}
-
-p{
-    width: 30px;
-    text-align: center;
-}
-
-.Movies-container{
+/* .Movies-container, .moreInformation{
     position: relative;
-    background-color: rgb(77, 48, 117);
     display: inline-block;
-    margin: 20px 20px;
 
     width: 140px;
     height: 300px;
 
     border-radius: 2%;
     box-shadow: 2px 2px rgb(38, 38, 38);
-}
+} */
 
-img{
+/* .Movies-container{
+    background-color: rgb(77, 48, 117);
+    margin: 20px 20px;
+} */
+
+/* .moreInformation{
+    display: none;
+    background-color: rgba(0, 0, 0, 0.536);
+} */
+
+/* #view_title {
+    width: 110px;
+    text-align: center;
+} */
+
+/* #view_vote_average{
+    width: 30px;
+    text-align: center;
+} */
+
+/* .moreInformation{
+    position:absolute;
+    top: 0px;
+} */
+
+/* .moreInformation *{
+    margin: 10px 10px;
+} */
+
+/* img{
     display: inline;
     width: 140px;
     height: 230px;
-}
+} */
+
+/* .Movies-container:hover{
+    .moreInformation{
+        display: block;
+    }
+} */
 

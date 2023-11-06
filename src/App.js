@@ -1,6 +1,7 @@
 //  import { BrowserRouter, Route, Link, Switch } from "react-router-dom";
-import Movie from "./Components/Movie";
+// import Movie from "./Components/Movie";
 import { movies } from "./movieDummy";
+import Movie_styled from "./Components/Movie/Movie.style";
 
 
 function App() {
@@ -10,11 +11,12 @@ function App() {
         {
           movies.results.map((item) => {
             return (
-              <Movie 
+              <Movie_styled 
                 key={item.id}
                 poster_path={item.poster_path}
                 title={item.title}
-                vote_average={item.vote_average}      
+                vote_average={item.vote_average}
+                overview={item.overview}      
               />
             )
           })
