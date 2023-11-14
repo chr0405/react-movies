@@ -132,3 +132,45 @@ a{
 #NotFound_goToMainPage{
     color : red;
 }
+
+/* CheckLogin */
+
+#CheckLogin_form, #CheckLogin_h3{
+    position: relative;
+    top: 150px;
+    left: 600px;
+}
+
+#CheckLogin_form{
+    display: inline-block;
+}
+
+.CheckLogin_label{
+    display: block;
+    font-size: 15px;
+}
+
+.CheckLogin_input{
+    width: 300px;
+    height: 40px;
+}
+
+.CheckLogin_p{
+    font-size: 15px;
+    color : red;
+}
+
+#CheckLogin_submit{
+    width: 300px;
+    height: 40px;
+
+    color : white;
+    background-color: navy;
+
+    border-radius: 10px;
+}
+
+#CheckLogin_submit:disabled{
+    background-color: rgb(110, 110, 176);
+}
+

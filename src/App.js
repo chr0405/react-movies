@@ -6,6 +6,7 @@ import TV from "./Components/Pages/TV";
 import Header from "./Components/Header";
 import Movies from "./Components/Pages/Movies";
 import MovieDetail from "./Components/Pages/MovieDetail"
+import CheckLogin from "./Components/Pages/CheckLogin"
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/Celerbirity" element={<Celerbirity/>} />
           <Route path="/TV" element={<TV/>} />
           <Route path="*" element={<NotFound/>} />
+          <Route path="/CheckLogin" element={<CheckLogin/>} />
         </Routes>
       </BrowserRouter>
     </div>

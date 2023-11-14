@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import LoginControl from './LoginControl'
+// import LoginControl from './LoginControl'
+import LoginControl1 from './LoginControl1'
 
 function Header(){
     return(
@@ -17,7 +18,7 @@ function Header(){
                 <li><Link to="/TV">TV 프로그램</Link></li>
                 <li><Link to="/Celerbirity">인물</Link></li>
             </ul>
-            <LoginControl/>
+            <LoginControl1/>
 
         </div>
     )
