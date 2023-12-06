@@ -14,7 +14,7 @@ function Header(){
             />
             </Link>
             <ul id="Page_list">
-                <li><Link to="/Movies">영화</Link></li>
+                <li><Link to="/Movies" >영화</Link></li>
                 <li><Link to="/TV">TV 프로그램</Link></li>
                 <li><Link to="/Celerbirity">인물</Link></li>
             </ul>
