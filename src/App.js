@@ -7,12 +7,14 @@ import Header from "./Components/Header";
 import Movies from "./Components/Pages/Movies";
 import MovieDetail from "./Components/Pages/MovieDetail"
 import CheckLogin from "./Components/Pages/CheckLogin"
+import { useState } from "react";
 
 function App() {
+  const [isLoggedin, setIsLoggedin] = useState(false);
   return (
     <div className="root-wrap">
       <BrowserRouter>
-				<Header/>
+				<Header isLoggedin={isLoggedin} setIsLoggedin={setIsLoggedin}/>
         <Routes>
           <Route path="/" element={<Home/>} />
           <Route path="/Movies" element={<Movies/>} />
@@ -20,7 +22,7 @@ function App() {
           <Route path="/Celerbirity" element={<Celerbirity/>} />
           <Route path="/TV" element={<TV/>} />
           <Route path="*" element={<NotFound/>} />
-          <Route path="/CheckLogin" element={<CheckLogin/>} />
+          <Route path="/CheckLogin" element={<CheckLogin isLoggedin={isLoggedin} setIsLoggedin={setIsLoggedin}/>} />
         </Routes>
       </BrowserRouter>
     </div>

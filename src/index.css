@@ -8,6 +8,11 @@ body{
     height: 300px;
 }
 
+.title_and_vote_average{
+    width: 140px;
+    height: 70px;
+}
+
 .title_and_vote_average *, .moreInformation *{
     position: relative;
     display: inline-block;
@@ -24,6 +29,8 @@ body{
     width: 140px;
     height: 300px;
 
+    left: 20px;
+
     border-radius: 2%;
     box-shadow: 2px 2px rgb(38, 38, 38);
 }
@@ -34,23 +41,27 @@ body{
 }
 
 .moreInformation{
+    position:absolute;
+    top: 0px;
+    left: 0px;
     display: none;
     background-color: rgba(0, 0, 0, 0.536);
 }
 
+#info_overview{
+    position: relative;
+    height: 20px;
+}
+
 #view_title {
-    width: 110px;
+    width: 140px;
+    height: 30px;
     text-align: center;
 }
 
 #view_vote_average{
     width: 30px;
-    text-align: center;
-}
-
-.moreInformation{
-    position:absolute;
-    top: 0px;
+    left: 120px;
 }
 
 .moreInformation *{

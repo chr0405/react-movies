@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 // import LoginControl from './LoginControl'
 import LoginControl1 from './LoginControl1'
 
-function Header(){
+function Header({ isLoggedin, setIsLoggedin }){
     return(
         <div id='Header_title'>
             <Link to="/">
@@ -18,7 +18,7 @@ function Header(){
                 <li><Link to="/TV">TV 프로그램</Link></li>
                 <li><Link to="/Celerbirity">인물</Link></li>
             </ul>
-            <LoginControl1/>
+            <LoginControl1 isLoggedin={isLoggedin} setIsLoggedin={setIsLoggedin}/>
 
         </div>
     )

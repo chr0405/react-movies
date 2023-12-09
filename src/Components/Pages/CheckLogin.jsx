@@ -1,11 +1,16 @@
 import React from 'react'
 import { useState } from 'react'
+import { useNavigate } from "react-router-dom";
 
-export default function CheckLogin() {
+export default function CheckLogin({ isLoggedin, setIsLoggedin }) {
 
   const email_check = /^([0-9a-zA-Z_\.-]+)@([0-9a-zA-Z_-]+)(\.[0-9a-zA-Z_-]+){1,2}$/;
   const password_check = /^(?=.*[a-zA-Z])(?=.*[0-9])(?=.*[!@#$%^&*?_]).{8,16}$/;
 
+  /*****/ 
+  const navigate = useNavigate();
+  /*****/ 
+  
   const [email, setEmail] = useState('');
   const [passEmail, setPassEmail] = useState('');
   const [checkEmail, setCheckEmail] = useState(false);
@@ -37,10 +42,16 @@ export default function CheckLogin() {
     }
   }
 
+  const onSubmit = (event) =>{
+    event.preventDefault();
+    setIsLoggedin(true);
+    navigate('/');
+}
+  
   return (
     <div>
       <h3 id='CheckLogin_h3'>이메일과 비밀번호를 입력해 주세요.</h3>
-      <form id='CheckLogin_form'>
+      <form id='CheckLogin_form' onSubmit={onSubmit}>
         <label className='CheckLogin_label'>이메일 주소</label>
         <input className='CheckLogin_input' value={email} onChange={onCheckEmail}></input>
         <p className='CheckLogin_p'>{passEmail}</p>
